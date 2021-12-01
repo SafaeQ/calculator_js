@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <form name="form">
+            <input type="text" name="textview" id="textview" value="" class="textview display-1">
+        </form>
+        <div class="clearfix">
+            <div class="col-3"><input type="button" id="inputText" value="C" class="button"
+                    onclick="clearHitory()"></input>
+            </div>
+            <div class="col-3"><input type="button" value="%" class="button" onclick="operator('%');"></input></div>
+            <div class="col-3"><input type="button" value="Del" class="button"></input></div>
+            <div class="col-3"><input type="button" value="/" class="button operation" onclick="operator('/');"></input>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3"><input type="button" value="7" class="button number" onclick="insert(7);"></input></div>
+            <div class="col-3"><input type="button" value="8" class="button number" onclick="insert(8);"></input></div>
+            <div class="col-3"><input type="button" value="9" class="button number" onclick="insert(9);"></input></div>
+            <div class="col-3"><input type="button" value="x" class="button operation" onclick="operator('*');"></input>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3"><input type="button" value="4" class="button number" onclick="insert(4);"></input></div>
+            <div class="col-3"><input type="button" value="5" class="button number" onclick="insert(5);"></input></div>
+            <div class="col-3"><input type="button" value="6" class="button number" onclick="insert(6);"></input></div>
+            <div class="col-3"><input type="button" value="-" class="button operation" onclick="operator('-');"></input>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3"><input type="button" value="1" class="button number" onclick="insert(1);"></input></div>
+            <div class="col-3"><input type="button" value="2" class="button number" onclick="insert(2);"></input></div>
+            <div class="col-3"><input type="button" value="3" class="button number" onclick="insert(3);"></input></div>
+            <div class="col-3"><input type="button" value="+" class="button operation" onclick="operator('+');"></input>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3"><input type="button" value="." class="button" onclick="insert('.');"></input></div>
+            <div class="col-3"><input type="button" value="0" class="button number" onclick="insert(0);"></input></div>
+            <div class="col-6"><input type="button" value="=" class="button" onclick="equal();"></input></div>
+        </div>
+    </div>
+    <button id=btn>click</button>
+    <script src="./scriptCal.js"></script>
+</body>
+
+</html>
