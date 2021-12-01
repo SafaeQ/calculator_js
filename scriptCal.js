@@ -10,10 +10,10 @@ function operator(op) {
     operation[1] = op;
     console.log(operation);
 
-    if (operation[0] == "" && history.length > 0) {
-        operation[0] = history
+    // if (operation[0] == "" && history.length > 0) {
+    //     operation[0] = history
 
-    }
+    // }
 }
 
 function insert(number) {
@@ -70,9 +70,3 @@ function clearHitory() {
     });
 }
 // // console.log(clear());
-const btn = document.getElementById("btn");
-
-btn.addEventListener("click", function (e) {
-    // console.log(e.target);
-    // document.getElementsById("main").style.color = "red";
-})
