@@ -1,19 +1,12 @@
 let input = document.querySelector("#textview");
-// let number = document.querySelectorAll('.number');
 let result = 0;
 
 let operation = ["", null, ""];
-// let input = document.form.textview.value;
-let history = [];
+
 
 function operator(op) {
     operation[1] = op;
     console.log(operation);
-
-    // if (operation[0] == "" && history.length > 0) {
-    //     operation[0] = history
-
-    // }
 }
 
 function insert(number) {
